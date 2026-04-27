@@ -1,4 +1,4 @@
-# voltedege_console
+# voltedge-console
 
 **VoltEdge Retail — operations console** (frontend only). A **Vite + React + TypeScript** SPA for a regional **electronics retail** operations demo: marketing **landing page**, **JWT** sign-in, **role-based** dashboard, **POS** checkout demo, **offline sale queue** (IndexedDB + sync), and **BI** snippets (margin, shrinkage, campaigns, regional). It talks to the VoltEdge **API gateway** over HTTPS/fetch (default `http://localhost:8000`).
 
@@ -133,6 +133,31 @@ If your backend uses the standard VoltEdge seed, all accounts share password **`
 | `npm run dev` | Start Vite dev server (HMR). |
 | `npm run build` | Typecheck + production build → `dist/`. |
 | `npm run preview` | Serve `dist/` locally for smoke-testing the build. |
+
+---
+
+## Git workflow (update your code)
+
+Use this flow when you are ready to sync your local updates to GitHub:
+
+```bash
+# 1) Get latest changes from remote
+git pull origin main
+
+# 2) Check what changed locally
+git status
+
+# 3) Stage changes
+git add .
+
+# 4) Commit with a clear message
+git commit -m "docs: update README"
+
+# 5) Push to GitHub
+git push origin main
+```
+
+If you use feature branches, replace `main` with your branch name.
 
 ---
 
